@@ -220,8 +220,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #1FB355;
+  border-color: #1FB355; }
 
 
 /* Forms
@@ -326,8 +326,8 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
-  padding: 12px 15px;
   text-align: left;
+  padding: 0 3px; 
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
@@ -341,7 +341,7 @@ td:last-child {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
-  margin-bottom: 1rem; }
+  margin: 0.5rem; }
 input,
 textarea,
 select,
