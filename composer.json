@@ -13,7 +13,9 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "phpauth/phpauth": "^1.1"
+        "phpauth/phpauth": "^1.1",
+        "mckay/flash": "^1.0.5",
+        "fpdo/fluentpdo": "1.1.*"
     },
     "autoload": {
         "files": [ "flight/autoload.php", "flight/Flight.php" ]

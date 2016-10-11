@@ -1,4 +1,4 @@
-<form action="auth" method="POST">
+<form action="login" method="POST">
 	<h5>Login</h5>
 	<hr>
 	<label for="email">Email</label>

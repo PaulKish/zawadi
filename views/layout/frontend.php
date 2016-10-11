@@ -9,14 +9,21 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 
-	<link rel="stylesheet" href="public/css/normalize.css">
-	<link rel="stylesheet" href="public/css/skeleton.css">
+	<link rel="stylesheet" href="/public/css/normalize.css">
+	<link rel="stylesheet" href="/public/css/skeleton.css">
 
 	<link rel="icon" type="image/png" href="public/img/favicon.png">
 
 </head>
 <body>
   	<div class="container about">
+  		<?php foreach(Flight::flash()->all() as $flash):?>
+  			<div class="row">
+		    	<span class="<?= $flash['type']; ?>"><?= $flash['message'] ?></span>
+		    </div>
+		<?php endforeach; ?>
+		<?php Flight::flash()->clear(); ?>
+
 		<?= $body_content; ?>
   	</div>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>

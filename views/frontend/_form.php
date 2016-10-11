@@ -1,4 +1,4 @@
-<form action="donate" method="POST">
+<form action="index" method="POST">
 	<h5>Sponsership Card</h5>
 
 	<label for="donation_type">Donation Type</label>
