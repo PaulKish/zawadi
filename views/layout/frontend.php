@@ -17,6 +17,24 @@
 </head>
 <body>
   	<div class="container about">
+  		<div class="row fixed-nav">
+			<div class="four columns">
+		  		<a href="www.zawadiafrica.org">
+		  			<img class="u-max-full-width" src="public/img/zawadi_logo.png">
+		  		</a>
+		  	</div>
+		  	<div class="eight columns">
+		  		<ul class="menu u-pull-right">
+		  			<li><a href="#ourStory">Our Story</a></li>
+		  			<li><a href="#sponsershipCategory">Sponsership Categories</a></li>
+		  			<li><a href="#sponsershipCard">Sponsor a Girl</a></li>
+		  			<li><a href="#bankDetails">Bank Details</a></li>
+		  		</ul>
+		  	</div>
+		</div>
+
+		<hr>
+
   		<?php foreach(Flight::flash()->all() as $flash):?>
   			<div class="row">
 		    	<span class="<?= $flash['type']; ?>"><?= $flash['message'] ?></span>

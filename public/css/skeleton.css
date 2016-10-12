@@ -31,9 +31,10 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding:0 20px;
+  background-color: white;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -125,7 +126,9 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #222; 
+  background-color: #00A631;
+}
 
 
 /* Typography
@@ -423,5 +426,36 @@ there.
 /* Custom Css layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .about{
-  margin-top: 30px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+ul.menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00A631;
+}
+
+.menu li {
+  float: left;
+  margin: 0;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.menu li a:hover {
+  background-color: #F7931D;
+  color: white;
+}
+.fixed-nav{
+  position: fixed;
 }
