@@ -19,7 +19,7 @@
 <div class="row">
 	<div class="eight columns">
 		<p>Sponsorship can be done for the number of girls you are most comfortable with</p>
-		<canvas id="chart-category" width="500" height="300"></canvas>
+		<canvas id="chart-category" width="400" height="200"></canvas>
 	</div>
 	<div class="four columns">
 		<p>Sponsership for each girl will include:</p>

@@ -456,3 +456,26 @@ ul.menu{
   background-color: #F7931D;
   color: white;
 }
+.active {
+  background-color: #F7931D;
+  color: white;
+}
+.fixed-nav{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  width: 64%;
+  background-color: white;
+}
+
+/* msg */
+.success{
+  color:green;
+}
+.warning{
+  color: orange;
+}
+.error{
+  color:red;
+}
