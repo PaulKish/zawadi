@@ -10,5 +10,5 @@
 	<label for="r-password">Repeat Password</label>
 	<input id="r-password" class="u-full-width" placeholder="repeat password" name="r-password" type="password">
 
-  	<input class="button-primary" value="Login" type="submit">
+  	<input class="button-primary" value="Register" type="submit">
 </form>

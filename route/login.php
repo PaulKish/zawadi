@@ -23,6 +23,7 @@ Flight::route('POST /login', function(){
         Flight::flash()->success('You are logged in');
         Flight::redirect('/admin');
     }else{
+        Flight::flash()->error($result['message']);
         Flight::redirect('/login');
     }
 });
