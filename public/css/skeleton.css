@@ -460,22 +460,42 @@ ul.menu{
   background-color: #F7931D;
   color: white;
 }
+/*
 .fixed-nav{
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 100;
   border-top: 0;
   width: 64%;
   background-color: white;
+}*/
+
+@media screen and (max-width: 550px){
+  /*
+  .fixed-nav{
+    width: 90%;
+    position: absolute;
+    z-index: 0;
+    margin-bottom: 10px; 
+  }*/
+  ul.menu{
+    width: 100%;
+  }
+  ul.menu li {
+    float: none;
+  }
 }
 
 /* msg */
 .success{
   color:green;
+  font-weight: bold;
 }
 .warning{
   color: orange;
+  font-weight: bold;
 }
 .error{
   color:red;
+  font-weight: bold;
 }
