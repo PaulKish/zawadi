@@ -481,16 +481,19 @@ ul.menu{
   }
 }
 
-/* msg */
-.success{
-  color:green;
+/* alert box */
+.alert {
+  padding: 20px;
+  margin-bottom: 15px;
+  color:white;
   font-weight: bold;
+}
+.success{
+  background-color: green;
 }
 .warning{
-  color: orange;
-  font-weight: bold;
+  background-color:orange;
 }
 .error{
-  color:red;
-  font-weight: bold;
+  background-color:red; 
 }

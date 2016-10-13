@@ -33,10 +33,9 @@
 		<hr>
 
   		<?php foreach(Flight::flash()->all() as $flash):?>
-  			<div class="row">
-		    	<span class="<?= $flash['type']; ?>"><?= $flash['message'] ?></span>
+  			<div class="alert <?= $flash['type']; ?>">
+		    	<span><?= $flash['message'] ?></span>
 		    </div>
-		    <br>
 		<?php endforeach; ?>
 		<?php Flight::flash()->clear(); ?>
 
