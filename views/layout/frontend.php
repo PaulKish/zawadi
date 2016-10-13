@@ -17,14 +17,12 @@
 </head>
 <body>
   	<div class="container about">
-  		<div class="row nav">
-			<div class="four columns">
+  		<div class="row">
+		  	<div class="twelve columns">
 		  		<a href="http://zawadiafrica.org">
 		  			<img class="u-max-full-width" src="public/img/zawadi_logo.png">
 		  		</a>
-		  	</div>
-		  	<div class="eight columns">
-		  		<ul class="menu u-pull-right">
+		  		<ul class="menu u-max-full-width nav">
 		  			<li><a class="menu-btn active" href="#ourStory">Our Story</a></li>
 		  			<li><a class="menu-btn" href="#sponsershipCategory">Sponsership Categories</a></li>
 		  			<li><a class="menu-btn" href="#sponsershipCard">Sponsor a Girl</a></li>
