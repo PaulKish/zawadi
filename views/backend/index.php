@@ -2,7 +2,7 @@
 	<div class="full column">
 		<h5>Donors</h5>
 		<hr>
-		<table class="u-full-width">
+		<table class="u-full-width" id="donor-list">
 			<thead>
 				<th>#</th>
 				<th>Donation Type</th>

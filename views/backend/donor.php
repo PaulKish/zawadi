@@ -36,6 +36,10 @@
 					<td>Anonymous</td>
 					<td><?= $donor['anonymous'] == 1 ? 'Yes':'No' ?></td>
 				</tr>
+				<tr>
+					<td>Date Signed</td>
+					<td><?= $donor['date'] ?></td>
+				</tr>
 			</tbody>
 		</table>
 		<a href="/admin" class="button">Back</a>

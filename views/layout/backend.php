@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="/public/css/normalize.css">
 	<link rel="stylesheet" href="/public/css/skeleton.css">
 
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
 	<link rel="icon" type="image/png" href="/public/img/favicon.png">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
@@ -47,8 +49,17 @@
 		<?= $body_content; ?>
   	</div>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+  	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
   	<script type="text/javascript">
-  		$("#loginForm").validate();
+  		$(document).ready(function() {
+		    $('#donor-list').DataTable( {
+		        "pagingType":"full_numbers"
+		    });
+
+		    $("#loginForm").validate(); // validation for login
+		});
+  		
+
   	</script>
 </body>
 </html>
