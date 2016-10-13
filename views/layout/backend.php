@@ -20,12 +20,10 @@
 <body>
   	<div class="container about">
   		<div class="row">
-			<div class="four columns">
+		  	<div class="twelve columns">
 		  		<a href="http://zawadiafrica.org">
 		  			<img class="u-max-full-width" src="/public/img/zawadi_logo.png">
 		  		</a>
-		  	</div>
-		  	<div class="eight columns">
 		  		<?php if(Flight::auth()->isLogged()): ?>
 		  			<span class="u-pull-right">
 		  				<a href="/">Main site</a> |
