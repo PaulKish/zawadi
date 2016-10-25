@@ -24,6 +24,7 @@ Flight::route('POST /index', function(){
     $data['anonymous'] = $request->data->anonymous;
 
   	$fpdo = Flight::fpdo();
+    
   	/*
   	$check_exist = $fpdo->from('donors')->where('email',$data['email'])->fetch();
   	if($check_exist){
@@ -33,7 +34,7 @@ Flight::route('POST /index', function(){
 
   	$insert = $fpdo->insertInto('donors')->values($data)->execute();
   	if($insert){
-  		Flight::flash()->success('Donation plegde has been added');
+  		Flight::flash()->success('Donation pledge has been added. Thank you for your support');
   	}else{
   		Flight::flash()->error('Please try again');
   	}
