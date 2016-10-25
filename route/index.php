@@ -9,8 +9,8 @@ Flight::route('/', function(){
 	Flight::render('layout/frontend');
 });
 
-// donate
-Flight::route('POST /index', function(){
+// donate 
+Flight::route('POST /index', function() use($config) {
 	$request = Flight::request();
 	
 	$data['donation_type'] = $request->data->donation_type;
@@ -23,17 +23,41 @@ Flight::route('POST /index', function(){
 	$data['tel_cell'] = $request->data->tel_cell;
 	$data['anonymous'] = $request->data->anonymous;
 
+	//$recaptcha = new \ReCaptcha\ReCaptcha($secret);
+
 	$fpdo = Flight::fpdo();
-	
-	/*
-	$check_exist = $fpdo->from('donors')->where('email',$data['email'])->fetch();
-	if($check_exist){
-		Flight::flash()->error('Donor email exists');
-		Flight::redirect('/');
-	}*/
 
 	$insert = $fpdo->insertInto('donors')->values($data)->execute();
 	if($insert){
+		// send acknowledgement email
+		$mail = Flight::mail();
+
+		$mail->isSMTP();                                      
+		$mail->Host = $config['smtp_host'];  
+		$mail->SMTPAuth = true;                               
+		$mail->Username = $config['smtp_user'];                 
+		$mail->Password = $config['smtp_pass'];                           
+		$mail->SMTPSecure = 'tls';                            
+		$mail->Port = $config['smtp_port'];   
+
+		$mail->setFrom($config['site_email'], 'Zawadi Africa');
+		$mail->addAddress($data['email']);
+
+		$mail->isHTML(true);
+
+		$mail->Subject = 'Thank You';
+
+		// hmmh must be a better way to do this
+		ob_start();
+		include ('views/email/index.php');
+		$output = ob_get_contents();
+		ob_end_clean();
+		$mail->Body  = $output;
+		$contents = ob_get_contents();
+		ob_end_clean();
+
+		$mail->send();
+
 		Flight::flash()->success('Donation pledge has been added. Thank you for your support');
 	}else{
 		Flight::flash()->error('Please try again');
