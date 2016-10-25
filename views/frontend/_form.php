@@ -56,5 +56,9 @@
 		<input id="anonymous" name="anonymous" type="checkbox" value="1">
 		<span class="label-body">I wish this gift to remain anonymous</span>
 	</label>
+
+	<div class="g-recaptcha" data-sitekey="<?= $site_key; ?>"></div>
+    <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+    
 	<input class="button-primary" value="Donate" type="submit">
 </form>

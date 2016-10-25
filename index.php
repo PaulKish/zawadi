@@ -23,11 +23,17 @@ Flight::register('auth', 'PHPAuth\Auth',[Flight::db(),Flight::config()]);
 // register flash messages
 Flight::register('flash','McKay\Flash');
 
+// register recaptcha
+Flight::register('recaptcha','ReCaptcha\ReCaptcha',[$config['secret_key']]);
+
 // register phpmailer
 Flight::register('mail', 'PHPMailer');
 
 //Set page title
 Flight::view()->set('site_name', 'Zawadi Africa | Education Fund');
+
+//site key
+Flight::view()->set('site_key', $config['site_key']);
 
 // Require routes
 $files = glob('route/*.php');
