@@ -32,42 +32,115 @@ $(document).ready(function() {
 	$("#donationForm").validate();
 });
 
-var ctx = document.getElementById("chart-category");
-var myChart = new Chart(ctx, {
-	type: 'horizontalBar',
-	data: {
-	    labels: ["Platinum - 20+ Girls","Gold - 15 Girls","Silver - 10 Girls","Bronze - 3 Girls","Blue - 1 Girl","Other"],
-	    datasets: [{
-	        label: 'Category',
-	        data: [5000000,3750000,2500000,750000,250000,5000],
-	        backgroundColor: [
-	            'rgba(90, 89, 89, 0.8)',
-	            'rgba(100, 84, 0, 0.8)',
-	            'rgba(75, 75, 75, 0.8)',
-	            'rgba(80, 50, 20, 0.8)',
-	            'rgba(0, 0, 100, 0.8)',
-	            'rgba(128, 128, 0, 0.8)'
-	        ]
-	    }]
+AmCharts.makeChart("chartdiv",
+{
+	"type": "serial",
+	"rotate": true,
+	"colors": [
+		"#D4D4D4",
+		"#DFBF86",
+		"#ACABB0",
+		"#D2AF6F",
+		"#91D8F8",
+		"#898D04"
+	],
+	"startDuration": 1,
+	"color": "#222",
+	"fontFamily": "Raleway",
+	"fontSize": 12,
+	"categoryAxis": {
+		"gridPosition": "start",
+		"labelsEnabled":false,
+		"axisAlpha": 0,
+		"gridAlpha": 0.1
 	},
-	options: {
-		legend:{
-			display: false
+	"valueAxis": {
+		"gridAlpha": 0.1
+	},
+	"graphs": [
+		{
+			"showBalloon": false,
+			"fillAlphas": 1,
+			"id": "AmGraph-1",
+			"title": "Platinum",
+			"type": "column",
+			"valueField": "Platinum",
+			"labelText" : "Platinum - 20 Girls",
+			"labelPosition": "right",
+			"labelRotation":"0"
 		},
-	    scales: {
-	    	xAxes: [{
-	        	display: false,
-	        	ticks:{
-	        		fontFamily: "Raleway",
-	        	}
-	        }],
-	        yAxes: [{
-	        	display: true,
-	            ticks: {
-	                beginAtZero:true,
-	                fontFamily: "Raleway",
-	            }
-	        }]
-	    }
-	}
-});
+		{
+			"showBalloon": false,
+			"fillAlphas": 1,
+			"id": "AmGraph-2",
+			"title": "Gold",
+			"type": "column",
+			"valueField": "Gold",
+			"labelText" : "Gold - 15 Girls",
+			"labelPosition": "right",
+			"labelRotation":"0"
+		},
+		{
+			"showBalloon": false,
+			"fillAlphas": 1,
+			"id": "AmGraph-3",
+			"title": "Silver",
+			"type": "column",
+			"valueField": "Silver",
+			"labelText": "Silver - 10 Girls",
+			"labelPosition": "right",
+			"labelRotation":"0"
+		},
+		{
+			"showBalloon": false,
+			"fillAlphas": 1,
+			"id": "AmGraph-4",
+			"title": "Bronze",
+			"type": "column",
+			"valueField": "Bronze",
+			"labelText": "Bronze - 3 Girls",
+			"labelPosition": "right",
+			"labelRotation":"0"
+		},
+		{
+			"showBalloon": false,
+			"fillAlphas": 1,
+			"id": "AmGraph-5",
+			"title": "Blue",
+			"type": "column",
+			"valueField": "Blue",
+			"labelText": "Blue - 1 Girl",
+			"labelPosition": "right",
+			"labelRotation":"0"
+		},
+		{
+			"showBalloon": false,
+			"fillAlphas": 1,
+			"id": "AmGraph-6",
+			"title": "Other",
+			"type": "column",
+			"valueField": "Other",
+			"labelText": "Green - Other",
+			"labelPosition": "right",
+			"labelRotation":"0"
+		}
+	],
+	"titles": [
+		{
+			"id": "Title-1",
+			"size": 15,
+			"text": "Sponsorship Categories"
+		}
+	],
+	"dataProvider": [
+		{
+			"Platinum": "5000000",
+			"Gold"	  : "3750000",
+			"Silver"  : "2500000",
+			"Bronze"  : "750000",
+			"Blue"	  : "250000",
+			"Other"	  : "50000"
+		}
+	]
+}
+);
