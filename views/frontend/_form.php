@@ -13,7 +13,7 @@
 				<option value="green">Green</option>
 			</select>
 
-			<label for="amount">Amount</label>
+			<label for="amount">Amount (KES)</label>
 			<input id="amount" class="u-full-width" placeholder="amount" name="amount" type="number" required>
 		  	
 		  	<label for="payment_installment">Which I would like to pay</label>
@@ -59,6 +59,6 @@
 
 	<div class="g-recaptcha" data-sitekey="<?= $site_key; ?>"></div>
     <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
-    
+
 	<input class="button-primary" value="Donate" type="submit">
 </form>
