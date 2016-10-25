@@ -59,6 +59,7 @@
 
 	<div class="g-recaptcha" data-sitekey="<?= $site_key; ?>"></div>
     <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+    <br>
 
 	<input class="button-primary" value="Donate" type="submit">
 </form>

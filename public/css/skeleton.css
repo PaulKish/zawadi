@@ -489,12 +489,12 @@ ul.menu{
   color:white;
   font-weight: bold;
 }
-.success{
+.alert-success{
   background-color: green;
 }
-.warning{
+.alert-warning{
   background-color:orange;
 }
-.error{
+.alert-error{
   background-color:red; 
 }
