@@ -38,6 +38,8 @@
 <div class="row">
 	<div class="six columns">
 		<h5 id="bankDetails">Bank Details</h5>
+		<p>Please contact <a href="mailto:info@zawadiafrica.org">Zawadi Africa</a> for details on how to donate via Cheque/Bank Transfer</p>
+		<!--
 		<ul class="no-bullet">
 			<li>Zawadi Africa Education Fund</li>
 			<li>Commercial Bank of Africa</li>
@@ -45,7 +47,7 @@
 			<li>KES acc No: 6436150037</li>
 			<li>USD acc No: 6436150024</li>
 			<li>SWIFT Code: CBAFKEN</li>
-		</ul>
+		</ul> -->
 	</div>
 	<div class="six columns">
 		<h5>MPESA</h5>
