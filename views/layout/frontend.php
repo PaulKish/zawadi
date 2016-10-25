@@ -24,7 +24,7 @@
 		  		</a>
 		  		<ul class="menu u-max-full-width nav">
 		  			<li><a class="menu-btn active" href="#ourStory">Our Story</a></li>
-		  			<li><a class="menu-btn" href="#sponsershipCategory">Sponsership Categories</a></li>
+		  			<li><a class="menu-btn" href="#sponsershipCategory">Sponsorship Categories</a></li>
 		  			<li><a class="menu-btn" href="#sponsershipCard">Sponsor a Girl</a></li>
 		  			<li><a class="menu-btn" href="#bankDetails">Bank Details</a></li>
 		  		</ul>
