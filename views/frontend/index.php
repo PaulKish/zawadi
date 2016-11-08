@@ -36,25 +36,36 @@
 
 <hr>
 <div class="row">
-	<div class="six columns">
+	<div class="eight columns">
 		<h5 id="bankDetails">Bank Details</h5>
-		<p>Please contact <a href="mailto:info@zawadiafrica.org">Zawadi Africa</a> for details on how to donate via Cheque/Bank Transfer</p>
-		<!--
-		<ul class="no-bullet">
-			<li>Zawadi Africa Education Fund</li>
-			<li>Commercial Bank of Africa</li>
-			<li>Upperhill Branch</li>
-			<li>KES acc No: 6436150037</li>
-			<li>USD acc No: 6436150024</li>
-			<li>SWIFT Code: CBAFKEN</li>
-		</ul> -->
+		<div class="row">
+			<div class="six columns">
+				<ul class="no-bullet">
+					<li>Zawadi Africa Education Fund</li>
+					<li>Commercial Bank of Africa</li>
+					<li>Upperhill Branch</li>
+					<li>KES acc No: 6436150037</li>
+					<li>USD acc No: 6436150024</li>
+					<li>SWIFT Code: CBAFKEN</li>
+				</ul> 
+			</div>
+			<div class="six columns">
+				<ul class="no-bullet">
+					<li>Bank of America</li>
+					<li>Acc No: 483027595380</li>
+					<li>Routing No: 021000322</li>
+				</ul> 
+			</div>
+		</div>
 	</div>
-	<div class="six columns">
+	<div class="four columns">
 		<h5>MPESA</h5>
 		<ul class="no-bullet">
 			<li>Zawadi Africa Education Fund</li>
 			<li>Paybill Number: 880478</li>
-			<li>Donors name in full</li>
+			<li>Account Number: Donors name in full</li>
 		</ul>
+		<h5>GoFundMe</h5>
+		<a href="https://www.gofundme.com/ZawadiAfrica">GoFundMe</a>
 	</div>
 </div>
